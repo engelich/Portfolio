@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, Phone, Github, Send } from 'lucide-react'
+
+// Корректный импорт картинок
 const images = import.meta.glob('./assets/img/*.{jpg,png,jpeg}', { eager: true });
 const getImg = name => images[`./assets/img/${name}`]?.default || '';
 
 const portfolio = [
- 
   {
     title: 'Многостраничный сайт каталог для Автомобильной компании',
     description: 'Многостраничный e-commerce сайт с каталогом и фильтрами.',
@@ -31,7 +32,7 @@ const portfolio = [
     link: 'https://landing-multi.vitmp.ru/'
   },
   {
-    title: 'Лендинг для Стомотологии',
+    title: 'Лендинг для Стоматологии',
     description: 'Cайт в темных тонах для локального бизнеса с отзывами и меню.',
     img: getImg('dental.png'),
     link: 'https://dental-1.vitmp.ru/'
@@ -64,10 +65,10 @@ export default function App() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
         >
-            Middle Web-Верстальщик, опыт 3+ года.<br />Собственный подход к оптимизации, создаю быстрые и современные интерфейсы.
+          Middle Web-Верстальщик, опыт 3+ года.<br />Собственный подход к оптимизации, создаю быстрые и современные интерфейсы.
         </motion.p>
         <div className="flex gap-4">
-          <a href="https://ufa.hh.ru/resume/c8aa350bff0beb760b0039ed1f6c5a55393433" target="_blank"  className="bg-[#212245] shadow-lg rounded-2xl text-lg px-5 py-2 font-semibold hover:bg-[#232357] transition">Смотреть резюме</a>
+          <a href="https://ufa.hh.ru/resume/c8aa350bff0beb760b0039ed1f6c5a55393433" target="_blank"  className="bg-[#212245] shadow-lg rounded-2xl text-lg px-5 py-2 font-semibold hover:bg-[#232357] transition" rel="noopener noreferrer">Смотреть резюме</a>
           <a href="#contacts" className="bg-[#252558] shadow-lg rounded-2xl text-lg px-5 py-2 font-semibold hover:bg-[#2b2b6c] transition">Связаться</a>
         </div>
       </header>
@@ -82,10 +83,11 @@ export default function App() {
         <div className="bg-white/5 backdrop-blur-xl rounded-2xl shadow-xl p-7 mb-8 border border-white/10">
           <h2 className="text-2xl font-bold mb-2">Обо мне</h2>
           <p className="text-slate-200 text-lg leading-relaxed">
-            Более 3 лет профессионального опыта в web-разработке. Специализируюсь на создании стильных, адаптивных и удобных интерфейсов, которые одинаково отлично работают на любых устройствах и в любых браузерах. Легко решаю задачи любой сложности — от лендингов до сложных интерфейсов с продуманной структурой и анимацией.          </p>
+            Более 3 лет профессионального опыта в web-разработке. Специализируюсь на создании стильных, адаптивных и удобных интерфейсов, которые одинаково отлично работают на любых устройствах и в любых браузерах. Легко решаю задачи любой сложности — от лендингов до сложных интерфейсов с продуманной структурой и анимацией.
+          </p>
           <div className="flex flex-wrap gap-2 mt-4">
             <span className="bg-[#212245] rounded-xl px-4 py-1 text-sm">HTML5</span>
-            <span className="bg-[#212245] rounded-xl px-4 py-1 text-sm">sCSS</span>
+            <span className="bg-[#212245] rounded-xl px-4 py-1 text-sm">SCSS</span>
             <span className="bg-[#212245] rounded-xl px-4 py-1 text-sm">JavaScript</span>
             <span className="bg-[#212245] rounded-xl px-4 py-1 text-sm">Gulp</span>
             <span className="bg-[#212245] rounded-xl px-4 py-1 text-sm">Gsap</span>
@@ -116,7 +118,7 @@ export default function App() {
                 <div className="p-6">
                   <h3 className="text-lg font-semibold mb-1">{item.title}</h3>
                   <p className="text-slate-300 mb-4 min-h-[40px]">{item.description}</p>
-                  <div >
+                  <div>
                     <span className="inline-block bg-[#252558] shadow rounded-xl text-sm px-5 py-2 font-semibold hover:bg-[#2b2b6c] transition">Смотреть сайт</span>
                   </div>
                 </div>
@@ -129,8 +131,7 @@ export default function App() {
       <footer id="contacts" className="max-w-3xl mx-auto px-4 pb-12 flex flex-col items-center gap-5">
         <h2 className="text-xl font-bold mb-2">Контакты</h2>
         <div className="flex gap-6 text-slate-200">
-          {/* <button onClick={() => setShowMail((v) => !v)} className="hover:text-blue-400 transition"><Mail size={26} /></button>
-          <button onClick={() => setShowPhone((v) => !v)} className="hover:text-blue-400 transition"><Phone size={26} /></button> */}
+          {/* Можно добавить email и телефон по желанию */}
           <a href="https://t.me/engelich" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition"><Send size={26} /></a>
           <a href="https://github.com/engelich" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition"><Github size={26} /></a>
         </div>
