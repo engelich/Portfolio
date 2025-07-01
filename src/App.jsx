@@ -33,16 +33,28 @@ const portfolio = [
   },
   {
     title: 'Лендинг для Стоматологии',
-    description: 'Cайт в темных тонах для локального бизнеса с отзывами и меню.',
+    description: 'Cайт для локального бизнеса с отзывами и меню.',
     img: getImg('dental.png'),
     link: 'https://dental-1.vitmp.ru/'
+  },
+  {
+    title: 'Многостраничник для компании СервисУфаХолод',
+    description: 'Cайт каталог для бизнеса',
+    img: getImg('holod.png'),
+    link: 'https://ремонт-холодильника-уфа.рф/'
   },
   {
     title: 'Многостраничный сайт для компании Прибок-Уфа',
     description: 'Cайт в простом стиле с корзиной и меню',
     img: getImg('priborufa.png'),
     link: 'https://priborufa.ru/'
-  } 
+  },
+  {
+    title: 'Интернет магазин сайт для компании Пышка',
+    description: 'Cайт магазин с корзиной и меню',
+    img: getImg('pishka.png'),
+    link: 'https://pishkaexclusive.ru/'
+  }  
 ]
 
 export default function App() {
