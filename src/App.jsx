@@ -3,56 +3,56 @@ import { motion } from 'framer-motion'
 import { Mail, Phone, Github, Send } from 'lucide-react'
 
 // Корректный импорт картинок
-const images = import.meta.glob('./assets/img/*.{jpg,png,jpeg}', { eager: true });
+const images = import.meta.glob('./assets/img/*.{jpg,png,jpeg,webp}', { eager: true });
 const getImg = name => images[`./assets/img/${name}`]?.default || '';
 
 const portfolio = [
   {
     title: 'Многостраничный сайт каталог для Автомобильной компании',
     description: 'Многостраничный e-commerce сайт с каталогом и фильтрами.',
-    img: getImg('multi-5.png'),
+    img: getImg('multi-5.webp'),
     link: 'https://multi-5.vitmp.ru/'
   },
   {
     title: 'Многостраничный сайт каталог для Автомобильной компании',
     description: 'Многостраничный e-commerce сайт с каталогом и фильтрами',
-    img: getImg('multi-bu.png'),
+    img: getImg('multi-bu.webp'),
     link: 'https://multi-bu-1.vitmp.ru/'
   },
   {
     title: 'Многостраничный сайт для компании Victory-Group',
     description: 'Cайт в темных тонах для бизнеса',
-    img: getImg('victorygroup.png'),
+    img: getImg('victorygroup.webp'),
     link: 'https://victorycompany.ru/'
   },
   {
     title: 'Landing Page для Автомобильной компании',
     description: 'Современный лендинг с адаптивной версткой и анимациями.',
-    img: getImg('multi-landing.png'),
+    img: getImg('multi-landing.webp'),
     link: 'https://landing-multi.vitmp.ru/'
   },
   {
     title: 'Лендинг для Стоматологии',
     description: 'Cайт для локального бизнеса с отзывами и меню.',
-    img: getImg('dental.png'),
+    img: getImg('dental.webp'),
     link: 'https://dental-1.vitmp.ru/'
   },
   {
     title: 'Многостраничник для компании СервисУфаХолод',
     description: 'Cайт каталог для бизнеса',
-    img: getImg('holod.png'),
+    img: getImg('holod.webp'),
     link: 'https://ремонт-холодильника-уфа.рф/'
   },
   {
     title: 'Многостраничный сайт для компании Прибок-Уфа',
     description: 'Cайт в простом стиле с корзиной и меню',
-    img: getImg('priborufa.png'),
+    img: getImg('priborufa.webp'),
     link: 'https://priborufa.ru/'
   },
   {
     title: 'Интернет магазин сайт для компании Пышка',
     description: 'Cайт магазин с корзиной и меню',
-    img: getImg('pishka.png'),
+    img: getImg('pishka.webp'),
     link: 'https://pishkaexclusive.ru/'
   }  
 ]
