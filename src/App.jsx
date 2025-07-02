@@ -3,7 +3,8 @@ import { motion } from 'framer-motion'
 import { Mail, Phone, Github, Send } from 'lucide-react'
 
 // Корректный импорт картинок
-const images = import.meta.glob('./assets/img/*.{jpg,png,jpeg,webp}', { eager: true });
+const images = import.meta.glob('./assets/img/*.{webp,jpg,png,jpeg}', { eager: true });
+
 const getImg = name => images[`./assets/img/${name}`]?.default || '';
 
 const portfolio = [
@@ -56,6 +57,7 @@ const portfolio = [
     link: 'https://pishkaexclusive.ru/'
   }  
 ]
+console.log(getImg('multi-5.webp'))
 
 export default function App() {
   const [showMail, setShowMail] = useState(false)
@@ -135,10 +137,13 @@ export default function App() {
                   </div>
                 </div>
               </a>
+              
             </motion.div>
           ))}
         </div>
+        
       </motion.section>
+      
 
       <footer id="contacts" className="max-w-3xl mx-auto px-4 pb-12 flex flex-col items-center gap-5">
         <h2 className="text-xl font-bold mb-2">Контакты</h2>
