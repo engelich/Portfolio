@@ -57,6 +57,12 @@ const portfolio = [
     img: getImg('pishka.webp'),
     link: 'https://pishkaexclusive.ru/'
   }  
+  {
+    title: 'Многостраничный сайт для компании AmegaPRINT',
+    description: 'Cеть печатных центров',
+    img: getImg('amegaprint.webp'),
+    link: 'https://amegaprint.ru/?ysclid=mf9jc0i7te939424398'
+  } 
 ]
 
 export default function App() {
