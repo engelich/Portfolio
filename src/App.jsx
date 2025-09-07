@@ -96,7 +96,7 @@ export default function App() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, duration: 0.6 }}
     >
-      Middle Web-Верстальщик, опыт 3+ года.<br />Собственный подход к оптимизации, создаю быстрые и современные интерфейсы.
+      Middle Web-Верстальщик, опыт 4+ года.<br />Собственный подход к оптимизации, создаю быстрые и современные интерфейсы.
     </motion.p>
     <div className="flex gap-2 justify-between md:gap-4">
       <a href="https://ufa.hh.ru/resume/c8aa350bff0beb760b0039ed1f6c5a55393433" target="_blank"  className=" flex w-full flex-col items-center justify-center text-center  bg-[#212245] shadow-lg rounded-2xl text-lg px-5 py-2 font-semibold hover:bg-[#232357] transition" rel="noopener noreferrer">Смотреть резюме</a>
@@ -116,7 +116,7 @@ export default function App() {
         <div className="bg-white/5 backdrop-blur-xl rounded-2xl shadow-xl p-7 mb-8 border border-white/10">
           <h2 className="text-2xl font-bold mb-2">Обо мне</h2>
           <p className="text-slate-200 text-lg leading-relaxed">
-            Более 3 лет профессионального опыта в web-разработке. Специализируюсь на создании стильных, адаптивных и удобных интерфейсов, которые одинаково отлично работают на любых устройствах и в любых браузерах. Легко решаю задачи любой сложности — от лендингов до сложных интерфейсов с продуманной структурой и анимацией.
+            Более 4 лет профессионального опыта в web-разработке. Специализируюсь на создании стильных, адаптивных и удобных интерфейсов, которые одинаково отлично работают на любых устройствах и в любых браузерах. Легко решаю задачи любой сложности — от лендингов до сложных интерфейсов с продуманной структурой и анимацией.
           </p>
           <div className="flex flex-wrap gap-2 mt-4">
             <span className="bg-[#212245] rounded-xl px-4 py-1 text-sm">HTML5</span>
