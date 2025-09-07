@@ -56,7 +56,7 @@ const portfolio = [
     description: 'Cайт магазин с корзиной и меню',
     img: getImg('pishka.webp'),
     link: 'https://pishkaexclusive.ru/'
-  }  
+  },  
   {
     title: 'Многостраничный сайт для компании AmegaPRINT',
     description: 'Cеть печатных центров',
