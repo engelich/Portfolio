@@ -9,3 +9,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.text-info{
+
+  & a{
+      color: rgb(148 163 184 / var(--tw-text-opacity, 1));
+  }
+}

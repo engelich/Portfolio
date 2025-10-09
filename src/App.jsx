@@ -102,11 +102,11 @@ export default function App() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, duration: 0.6 }}
     >
-      Middle Web-Верстальщик, опыт 4+ года.<br />Собственный подход к оптимизации, создаю быстрые и современные интерфейсы.
+      Frontend-разработчик, опыт 4+ года.<br />Собственный подход к оптимизации, создаю быстрые и современные интерфейсы.
     </motion.p>
     <div className="flex gap-2 justify-between md:gap-4">
       <a href="https://ufa.hh.ru/resume/c8aa350bff0beb760b0039ed1f6c5a55393433" target="_blank"  className=" flex w-full flex-col items-center justify-center text-center  bg-[#212245] shadow-lg rounded-2xl text-lg px-5 py-2 font-semibold hover:bg-[#232357] transition" rel="noopener noreferrer">Смотреть резюме</a>
-      <a href="#contacts" className="flex w-full justify-center flex-col items-center text-center bg-[#252558] shadow-lg rounded-2xl text-lg px-5 py-2 font-semibold hover:bg-[#2b2b6c] transition">Связаться</a>
+      <a href="https://t.me/engelich" target="_blank" className="flex w-full justify-center flex-col items-center text-center bg-[#252558] shadow-lg rounded-2xl text-lg px-5 py-2 font-semibold hover:bg-[#2b2b6c] transition">Связаться</a>
     </div>
   </div>
 </header>
@@ -121,19 +121,27 @@ export default function App() {
       >
         <div className="bg-white/5 backdrop-blur-xl rounded-2xl shadow-xl p-7 mb-8 border border-white/10">
           <h2 className="text-2xl font-bold mb-2">Обо мне</h2>
-          <p className="text-slate-200 text-lg leading-relaxed">
-            Более 4 лет профессионального опыта в web-разработке. Специализируюсь на создании стильных, адаптивных и удобных интерфейсов, которые одинаково отлично работают на любых устройствах и в любых браузерах. Легко решаю задачи любой сложности — от лендингов до сложных интерфейсов с продуманной структурой и анимацией.
-          </p>
-          <div className="flex flex-wrap gap-2 mt-4">
-            <span className="bg-[#212245] rounded-xl px-4 py-1 text-sm">HTML5</span>
-            <span className="bg-[#212245] rounded-xl px-4 py-1 text-sm">SCSS</span>
-            <span className="bg-[#212245] rounded-xl px-4 py-1 text-sm">JavaScript</span>
-            <span className="bg-[#212245] rounded-xl px-4 py-1 text-sm">Gulp</span>
-            <span className="bg-[#212245] rounded-xl px-4 py-1 text-sm">Webpack</span>
-            <span className="bg-[#212245] rounded-xl px-4 py-1 text-sm">Gsap</span>
-            <span className="bg-[#212245] rounded-xl px-4 py-1 text-sm">Figma</span>
-            <span className="bg-[#212245] rounded-xl px-4 py-1 text-sm">BEM</span>
-            <span className="bg-[#212245] rounded-xl px-4 py-1 text-sm">Tailwind</span>
+          <div className="flex flex-col gap-2 mt-4">
+            <p className="text-slate-200 text-lg leading-relaxed">
+              Более 4 лет профессионального опыта в web-разработке. Специализируюсь на создании стильных, адаптивных и удобных интерфейсов, которые одинаково отлично работают на любых устройствах и в любых браузерах. Легко решаю задачи любой сложности — от лендингов до сложных интерфейсов с продуманной структурой и анимацией.
+            </p>
+            <p className="text-slate-200 text-lg leading-relaxed text-info">
+              Являюсь автором собственного продукта —  <a href='https://t.me/+EWJO558SfXVjMjJi' class="hover:text-[rgb(171,171,255)] transition" target="_blank" >Engel Lazy-Load</a> , универсального решения для ленивой загрузки контента с адаптацией под любые устройства и поддержку всех типов медиа-контента.          
+            </p>
+          </div>
+         
+          <div className="flex flex-wrap gap-2 mt-5">
+            <a href="https://ru.wikipedia.org/wiki/HTML" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">HTML5</a>
+            <a href="https://ru.wikipedia.org/wiki/Sass" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">SCSS</a>
+            <a href="https://ru.wikipedia.org/wiki/JavaScript" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">JavaScript</a>
+            <a href="https://vuejs-doc-ru.vercel.app/guide/introduction.html" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">Vue</a>
+            <a href="https://gulpjs.com/" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">Gulp</a>
+            <a href="https://webpack.js.org/" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">Webpack</a>
+            <a href="https://www.gsap.com/" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">Gsap</a>
+            <a href="https://www.figma.com/" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">Figma</a>
+            <a href="https://git-scm.com/" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">Git</a>
+            <a href="https://tailwindcss.com/" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">Tailwind</a>
+            
           </div>
         </div>
       </motion.section>
