@@ -25,7 +25,7 @@ const portfolio = [
     title: 'Многостраничный сайт для компании Victory-Group',
     description: 'Cайт в темных тонах для бизнеса',
     img: getImg('victorygroup.webp'),
-    link: 'https://victorycompany.ru/'
+    link: 'https://victoryagency.ru/'
   },
   {
     title: 'Landing Page для Автомобильной компании',
@@ -62,7 +62,13 @@ const portfolio = [
     description: 'Cеть печатных центров',
     img: getImg('amegaprint.webp'),
     link: 'https://amegaprint.ru/?ysclid=mf9jc0i7te939424398'
-  } 
+  },
+  {
+    title: 'Многостраничный сайт для компании Victory-Group',
+    description: 'Cайт в темных тонах для бизнеса',
+    img: getImg('victorygroup.webp'),
+    link: 'https://victorycompany.ru/'
+  }
 ]
 
 export default function App() {
