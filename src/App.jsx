@@ -28,10 +28,10 @@ const portfolio = [
     link: 'https://victoryagency.ru/'
   },
   {
-    title: 'Landing Page для Автомобильной компании',
+    title: 'Многостраничный сайт каталог для Автомобильной компании Lada',
     description: 'Современный лендинг с адаптивной версткой и анимациями.',
-    img: getImg('multi-landing.webp'),
-    link: 'https://landing-multi.vitmp.ru/'
+    img: getImg('lada-1.webp'),
+    link: 'https://lada.vitmp.ru/auto'
   },
   {
     title: 'Лендинг для Стоматологии',
