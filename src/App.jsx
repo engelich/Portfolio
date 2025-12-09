@@ -141,9 +141,8 @@ export default function App() {
             <a href="https://ru.wikipedia.org/wiki/Sass" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">SCSS</a>
             <a href="https://ru.wikipedia.org/wiki/JavaScript" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">JavaScript</a>
             <a href="https://vuejs-doc-ru.vercel.app/guide/introduction.html" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">Vue</a>
-            <a href="https://gulpjs.com/" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">Gulp</a>
-            <a href="https://webpack.js.org/" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">Webpack</a>
-            <a href="https://www.gsap.com/" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">Gsap</a>
+            <a href="https://nuxt.com/" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">Nuxt</a>
+            <a href="https://vite.dev/" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">Vite</a>
             <a href="https://www.figma.com/" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">Figma</a>
             <a href="https://git-scm.com/" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">Git</a>
             <a href="https://tailwindcss.com/" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">Tailwind</a>
