@@ -140,6 +140,7 @@ export default function App() {
             <a href="https://ru.wikipedia.org/wiki/HTML" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">HTML5</a>
             <a href="https://ru.wikipedia.org/wiki/Sass" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">SCSS</a>
             <a href="https://ru.wikipedia.org/wiki/JavaScript" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">JavaScript</a>
+            <a href="https://www.typescriptlang.org/" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">TypeScript</a>
             <a href="https://vuejs-doc-ru.vercel.app/guide/introduction.html" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">Vue</a>
             <a href="https://nuxt.com/" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">Nuxt</a>
             <a href="https://pinia.vuejs.org/" target="_blank" className="bg-[#212245] rounded-xl px-4 py-1 text-sm hover:bg-[#232357] transition">Pinia</a>
