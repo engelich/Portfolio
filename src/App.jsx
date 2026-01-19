@@ -10,70 +10,97 @@ const getImg = name => images[`./assets/img/${name}`]?.default || '';
 
 const portfolio = [
   {
-    title: 'Многостраничный сайт каталог для Автомобильной компании',
-    description: 'Многостраничный e-commerce сайт с каталогом и фильтрами.',
+    title: 'Корпоративный продуктовый сайт официального дилера LADA',
+    description: 'Официальный продуктовый сайт с презентацией модельного ряда, техническими характеристиками, адаптивной версткой и оптимизированной структурой контента.',
+    img: getImg('lada-off.webp'),
+    link: 'https://www.lada.ru/'
+  },
+  {
+    title: 'Многостраничный сайт-каталог для автомобильной компании AUTO-STOCK',
+    description: 'Каталог автомобилей с фильтрацией, сортировкой и детальными карточками. Адаптивная верстка и удобная навигация.',
     img: getImg('multi-5.webp'),
     link: 'https://multi-5.vitmp.ru/'
   },
   {
-    title: 'Многостраничный сайт каталог для Автомобильной компании',
-    description: 'Многостраничный e-commerce сайт с каталогом и фильтрами',
+    title: 'Многостраничный сайт-каталог для автомобильной компании',
+    description: 'Каталог автомобилей с фильтрами, структурированной навигацией и адаптивным интерфейсом.',
     img: getImg('multi-bu.webp'),
     link: 'https://multi-bu-1.vitmp.ru/'
   },
   {
-    title: 'Многостраничный сайт для компании Victory-Group',
-    description: 'Cайт в темных тонах для бизнеса',
+    title: 'Корпоративный сайт для компании Victory-Group',
+    description: 'Бизнес-сайт с разделами услуг, интерактивными блоками и тёмной визуальной концепцией. Адаптивная верстка.',
     img: getImg('victorygroup.webp'),
     link: 'https://victoryagency.ru/'
   },
   {
-    title: 'Многостраничный сайт каталог для Автомобильной компании Lada',
-    description: 'Современный лендинг с адаптивной версткой и анимациями.',
+    title: 'Промо-лендинг для автомобильной компании LADA',
+    description: 'Современный лендинг с анимациями, адаптивной версткой и акцентом на пользовательский опыт.',
     img: getImg('lada-1.webp'),
     link: 'https://lada.vitmp.ru/auto'
   },
   {
-    title: 'Лендинг для Стоматологии',
-    description: 'Cайт для локального бизнеса с отзывами и меню.',
+    title: 'Лендинг для стоматологической клиники',
+    description: 'Одностраничный сайт для локального бизнеса с отзывами, блоками услуг, формами обратной связи и адаптивной версткой.',
     img: getImg('dental.webp'),
     link: 'https://dental-1.vitmp.ru/'
   },
   {
-    title: 'Многостраничник для компании СервисУфаХолод',
-    description: 'Cайт каталог для бизнеса',
+    title: 'Многостраничный корпоративный сайт для компании «СервисУфаХолод»',
+    description: 'Сайт услуг с каталогом направлений, детальными страницами и адаптивным интерфейсом.',
     img: getImg('holod.webp'),
     link: 'https://ремонт-холодильника-уфа.рф/'
   },
   {
-    title: 'Многостраничный сайт для компании Прибок-Уфа',
-    description: 'Cайт в простом стиле с корзиной и меню',
+    title: 'Корпоративный сайт с элементами e-commerce для компании «Прибор-Уфа»',
+    description: 'Сайт с каталогом, корзиной и структурированной навигацией для бизнеса.',
     img: getImg('priborufa.webp'),
     link: 'https://priborufa.ru/'
   },
   {
-    title: 'Интернет магазин сайт для компании Пышка',
-    description: 'Cайт магазин с корзиной и меню',
+    title: 'Интернет-магазин для компании «Пышка»',
+    description: 'Полнофункциональный e-commerce сайт с корзиной, каталогом товаров и адаптивным пользовательским интерфейсом.',
     img: getImg('pishka.webp'),
     link: 'https://pishkaexclusive.ru/'
-  },  
+  },
   {
-    title: 'Многостраничный сайт для компании AmegaPRINT',
-    description: 'Cеть печатных центров',
+    title: 'Корпоративный сайт сети печатных центров AmegaPRINT',
+    description: 'Многостраничный сайт с презентацией услуг, контактами филиалов и адаптивной версткой.',
     img: getImg('amegaprint.webp'),
     link: 'https://amegaprint.ru/?ysclid=mf9jc0i7te939424398'
   },
-  {
-    title: 'Многостраничный сайт для компании Victory-Group',
-    description: 'Cайт в темных тонах для бизнеса',
-    img: getImg('victorygroup.webp'),
-    link: 'https://victorycompany.ru/'
-  }
+  // {
+  //   title: 'Корпоративный сайт для компании Victory-Group',
+  //   description: 'Бизнес-сайт с услугами, портфолио и контактной информацией. Адаптивный интерфейс.',
+  //   img: getImg('victorygroup.webp'),
+  //   link: 'https://victorycompany.ru/'
+  // }
 ]
+
+const CAREER_START_DATE = new Date(2021, 1, 1) // апрель = 3 (месяцы с 0)
+
+function getExperienceYears() {
+  const now = new Date()
+
+  let years = now.getFullYear() - CAREER_START_DATE.getFullYear()
+  let months = now.getMonth() - CAREER_START_DATE.getMonth()
+
+  if (months < 0) {
+    years--
+    months += 12
+  }
+
+  const monthFraction = Math.round((months / 12) * 10) / 10
+  const total = years + monthFraction
+
+  return total.toFixed(1) // например: 4.9
+}
+
 
 export default function App() {
   const [showMail, setShowMail] = useState(false)
   const [showPhone, setShowPhone] = useState(false)
+  const experienceYears = getExperienceYears()
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0a0a1a] via-[#14142b] to-[#233047] text-white font-sans">
      <header className="max-w-5xl mx-auto pt-10 pb-8 px-4 flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-6">
@@ -108,7 +135,7 @@ export default function App() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, duration: 0.6 }}
     >
-      Frontend-разработчик, опыт 4+ года.<br />Собственный подход к оптимизации, создаю быстрые и современные интерфейсы.
+      Frontend-разработчик, опыт {experienceYears} года.<br />Собственный подход к оптимизации, создаю быстрые и современные интерфейсы.
     </motion.p>
     <div className="flex gap-2 justify-between md:gap-4">
       <a href="https://ufa.hh.ru/resume/c8aa350bff0beb760b0039ed1f6c5a55393433" target="_blank"  className=" flex w-full flex-col items-center justify-center text-center  bg-[#212245] shadow-lg rounded-2xl text-lg px-5 py-2 font-semibold hover:bg-[#232357] transition" rel="noopener noreferrer">Смотреть резюме</a>
@@ -126,7 +153,7 @@ export default function App() {
         viewport={{ once: true }}
       >
         <div className="bg-white/5 backdrop-blur-xl rounded-2xl shadow-xl p-7 mb-8 border border-white/10">
-          <h2 className="text-2xl font-bold mb-2">Обо мне</h2>
+          <h2 className="text-xl font-bold mb-2">Обо мне</h2>
           <div className="flex flex-col gap-2 mt-4">
             <p className="text-slate-200 text-lg leading-relaxed">
               Более 4 лет профессионального опыта в web-разработке. Специализируюсь на создании стильных, адаптивных и удобных интерфейсов, которые одинаково отлично работают на любых устройствах и в любых браузерах. Легко решаю задачи любой сложности — от лендингов до сложных интерфейсов с продуманной структурой и анимацией.
@@ -160,7 +187,7 @@ export default function App() {
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-2xl font-bold mb-6">Мои проекты</h2>
+        <h2 className="text-xl font-bold mb-6">Проектный опыт</h2>
         <div className="grid md:grid-cols-2 gap-7">
           {portfolio.map((item, idx) => (
              <motion.div
