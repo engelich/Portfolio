@@ -77,7 +77,7 @@ const portfolio = [
   // }
 ]
 
-const CAREER_START_DATE = new Date(2021, 1, 1) // апрель = 3 (месяцы с 0)
+const CAREER_START_DATE = new Date(2021, 4, 1) // апрель = 3 (месяцы с 0)
 
 function getExperienceYears() {
   const now = new Date()
