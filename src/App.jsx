@@ -105,19 +105,20 @@ export default function App() {
     <div className="min-h-screen bg-gradient-to-br from-[#0a0a1a] via-[#14142b] to-[#233047] text-white font-sans">
      <header className="max-w-5xl mx-auto pt-10 pb-8 px-4 flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-6">
   {/* Аватарка слева */}
-  {/* <motion.div
+  <motion.div
     className="flex-shrink-0 mb-4 md:mb-0"
     initial={{ opacity: 0, scale: 0.95 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ delay: 0.1, duration: 0.5 }}
   >
     <img
-      src={getImg('avatar.jpg')}
+      src={getImg('avatar 2.png')}
       alt="Энгель Ахметов"
-      className=" h-56 aspect-[1/1] rounded-lg border-4 border-[#232357] shadow-xl object-cover bg-[#232357]"
+      className=" h-56 aspect-[1/1] rounded-lg border-4 border-[#232357] shadow-xl object-cover bg-[#232357] pointer-events-none"
       loading="lazy"
+      draggable="false"
     />
-  </motion.div> */}
+  </motion.div>
 
   {/* Текст справа */}
   <div className="flex flex-col justify-center">
@@ -127,7 +128,7 @@ export default function App() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      Ангель Ахметов
+      Энгель Ахметов
     </motion.h1>
     <motion.p 
       className="text-xl md:text-2xl mb-5 text-slate-200"
