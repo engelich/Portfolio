@@ -138,7 +138,7 @@ export default function App() {
       Frontend-разработчик, опыт {experienceYears} года.<br />Собственный подход к оптимизации, создаю быстрые и современные интерфейсы.
     </motion.p>
     <div className="flex gap-2 justify-between md:gap-4">
-      <a href="https://ufa.hh.ru/resume/c8aa350bff0beb760b0039ed1f6c5a55393433" target="_blank"  className=" flex w-full flex-col items-center justify-center text-center  bg-[#212245] shadow-lg rounded-2xl text-lg px-5 py-2 font-semibold hover:bg-[#232357] transition" rel="noopener noreferrer">Смотреть резюме</a>
+      <a href="https://spb.hh.ru/resume/c8aa350bff0beb760b0039ed1f6c5a55393433" target="_blank"  className=" flex w-full flex-col items-center justify-center text-center  bg-[#212245] shadow-lg rounded-2xl text-lg px-5 py-2 font-semibold hover:bg-[#232357] transition" rel="noopener noreferrer">Смотреть резюме</a>
       <a href="https://t.me/engelich" target="_blank" className="flex w-full justify-center flex-col items-center text-center bg-[#252558] shadow-lg rounded-2xl text-lg px-5 py-2 font-semibold hover:bg-[#2b2b6c] transition">Связаться</a>
     </div>
   </div>
