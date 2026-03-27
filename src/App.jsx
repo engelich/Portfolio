@@ -39,23 +39,19 @@ const portfolio = [
     img: getImg('lada-1.webp'),
     link: 'https://lada.vitmp.ru/auto'
   },
+
   {
-    title: 'Лендинг для стоматологической клиники',
-    description: 'Одностраничный сайт для локального бизнеса с отзывами, блоками услуг, формами обратной связи и адаптивной версткой.',
-    img: getImg('dental.webp'),
-    link: 'https://dental-1.vitmp.ru/'
+    title: 'Корпоративный сайт сети печатных центров AmegaPRINT',
+    description: 'Многостраничный сайт с презентацией услуг, контактами филиалов и адаптивной версткой.',
+    img: getImg('amegaprint.webp'),
+    link: 'https://amegaprint.ru/?ysclid=mf9jc0i7te939424398'
   },
+
   {
     title: 'Многостраничный корпоративный сайт для компании «СервисУфаХолод»',
     description: 'Сайт услуг с каталогом направлений, детальными страницами и адаптивным интерфейсом.',
     img: getImg('holod.webp'),
     link: 'https://ремонт-холодильника-уфа.рф/'
-  },
-  {
-    title: 'Корпоративный сайт с элементами e-commerce для компании «Прибор-Уфа»',
-    description: 'Сайт с каталогом, корзиной и структурированной навигацией для бизнеса.',
-    img: getImg('priborufa.webp'),
-    link: 'https://priborufa.ru/'
   },
   {
     title: 'Интернет-магазин для компании «Пышка»',
@@ -64,11 +60,19 @@ const portfolio = [
     link: 'https://pishkaexclusive.ru/'
   },
   {
-    title: 'Корпоративный сайт сети печатных центров AmegaPRINT',
-    description: 'Многостраничный сайт с презентацией услуг, контактами филиалов и адаптивной версткой.',
-    img: getImg('amegaprint.webp'),
-    link: 'https://amegaprint.ru/?ysclid=mf9jc0i7te939424398'
+    title: 'Корпоративный сайт с элементами e-commerce для компании «Прибор-Уфа»',
+    description: 'Сайт с каталогом, корзиной и структурированной навигацией для бизнеса.',
+    img: getImg('priborufa.webp'),
+    link: 'https://priborufa.ru/'
   },
+ 
+  {
+    title: 'Лендинг для стоматологической клиники',
+    description: 'Одностраничный сайт для локального бизнеса с отзывами, блоками услуг, формами обратной связи и адаптивной версткой.',
+    img: getImg('dental.webp'),
+    link: 'https://dental-1.vitmp.ru/'
+  },
+
   // {
   //   title: 'Корпоративный сайт для компании Victory-Group',
   //   description: 'Бизнес-сайт с услугами, портфолио и контактной информацией. Адаптивный интерфейс.',
